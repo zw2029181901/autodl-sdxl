@@ -1,0 +1,48 @@
+{
+  "id": "01-sdxl-studio",
+  "slug": "autodl-sdxl",
+  "name": "SDXL 生图",
+  "description": "输入文字生成图片，支持三种画幅、负面提示词与随机种子。",
+  "task": "text-to-image",
+  "requires_gpu": true,
+  "imports": [
+    "torch",
+    "diffusers",
+    "transformers",
+    "accelerate"
+  ],
+  "model_gb": 6.94,
+  "disk_gb": 12,
+  "gpu": "建议24GB显存、32GB内存起测；CPU offload。未做云端实测。",
+  "license": "CreativeML Open RAIL++（权重）；Apache-2.0（Diffusers）",
+  "source": "https://github.com/huggingface/diffusers",
+  "models": {
+    "main": {
+      "kind": "hf",
+      "required_files": ["model_index.json","unet/*.fp16.safetensors","vae/*.fp16.safetensors","text_encoder/*.fp16.safetensors","text_encoder_2/*.fp16.safetensors","tokenizer/vocab.json","tokenizer_2/vocab.json"],
+      "repo": "stabilityai/stable-diffusion-xl-base-1.0",
+      "revision": "462165984030d82259a11f4367a4eed129e94a7b",
+      "allow_patterns": [
+        "model_index.json",
+        "scheduler/*",
+        "tokenizer/*",
+        "tokenizer_2/*",
+        "text_encoder/config.json",
+        "text_encoder/*.fp16.safetensors",
+        "text_encoder_2/config.json",
+        "text_encoder_2/*.fp16.safetensors",
+        "unet/config.json",
+        "unet/*.fp16.safetensors",
+        "vae/config.json",
+        "vae/*.fp16.safetensors",
+        "LICENSE*",
+        "README.md"
+      ]
+    }
+  },
+  "torch": true,
+  "account": {
+    "github": "zw2029181901",
+    "autodl_user": "200211"
+  }
+}
