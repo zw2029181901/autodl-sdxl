@@ -13,7 +13,7 @@
   ],
   "model_gb": 6.94,
   "disk_gb": 12,
-  "gpu": "建议24GB显存、32GB内存起测；CPU offload。未做云端实测。",
+  "gpu": "已在RTX3090 24GB完成1024×1024、20步HTTP生图验收；建议24GB显存、32GB内存起测，使用CPU offload。其他GPU未逐一实测。",
   "license": "CreativeML Open RAIL++（权重）；Apache-2.0（Diffusers）",
   "source": "https://github.com/huggingface/diffusers",
   "models": {

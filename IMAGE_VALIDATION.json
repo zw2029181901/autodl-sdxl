@@ -1,0 +1,139 @@
+{
+  "prior_standalone_http": {
+    "id": "01-sdxl-studio",
+    "name": "SDXL 生图",
+    "status": "passed",
+    "outputs": [
+      "/tmp/gradio/997293150af44783a008e9732a824f50fd954ff363841a6655c0b21bda0c9c98/20261111-181256-d996f5c4a79a.png"
+    ],
+    "verification": "Standalone exported environment; Gradio HTTP upload, queue, inference and download",
+    "output_size": [
+      1024,
+      1024
+    ],
+    "steps": 20,
+    "seed": 42,
+    "elapsed_seconds": 22.054,
+    "slug": "autodl-sdxl",
+    "standalone_directory_bytes": 7595030305,
+    "model_revisions": {
+      "main": "462165984030d82259a11f4367a4eed129e94a7b"
+    },
+    "platform_image_saved": false,
+    "published": false
+  },
+  "system_disk_migration": {
+    "verified_at": "2026-11-12T00:21:38.626630+08:00",
+    "slug": "autodl-sdxl",
+    "status": "passed",
+    "system_disk_app": "/root/autodl-active",
+    "verification": "Copied model file sizes, contained paths, portable symlinks, pip check, offline model validation and existing HTTP6006 title",
+    "pip_check": "No broken requirements found.",
+    "doctor_output": "Project: 01-sdxl-studio\nIMPORT OK gradio 5.49.1\nIMPORT OK torch 2.8.0+cu128\nIMPORT OK diffusers 0.35.2\nIMPORT OK transformers 4.57.1\nIMPORT OK accelerate 1.10.1\nTORCH 2.8.0+cu128; CUDA runtime 12.8\nGPU check deferred\nMODEL OK main: /root/autodl-active/models/main\nHTTP OK: 11 UI components\nThis check does not prove model generation works. Complete the sample in SMOKE_TEST.md.\n",
+    "copied_model_files": [
+      {
+        "path": "models/main/model_index.json",
+        "bytes": 609
+      },
+      {
+        "path": "models/main/README.md",
+        "bytes": 8668
+      },
+      {
+        "path": "models/main/LICENSE.md",
+        "bytes": 14109
+      },
+      {
+        "path": "models/main/deployment-manifest.json",
+        "bytes": 4245
+      },
+      {
+        "path": "models/main/scheduler/scheduler_config.json",
+        "bytes": 479
+      },
+      {
+        "path": "models/main/text_encoder/config.json",
+        "bytes": 565
+      },
+      {
+        "path": "models/main/text_encoder/model.fp16.safetensors",
+        "bytes": 246144152
+      },
+      {
+        "path": "models/main/text_encoder_2/config.json",
+        "bytes": 575
+      },
+      {
+        "path": "models/main/text_encoder_2/model.fp16.safetensors",
+        "bytes": 1389382176
+      },
+      {
+        "path": "models/main/tokenizer/special_tokens_map.json",
+        "bytes": 472
+      },
+      {
+        "path": "models/main/tokenizer/tokenizer_config.json",
+        "bytes": 737
+      },
+      {
+        "path": "models/main/tokenizer/merges.txt",
+        "bytes": 524619
+      },
+      {
+        "path": "models/main/tokenizer/vocab.json",
+        "bytes": 1059962
+      },
+      {
+        "path": "models/main/tokenizer_2/tokenizer_config.json",
+        "bytes": 725
+      },
+      {
+        "path": "models/main/tokenizer_2/vocab.json",
+        "bytes": 1059962
+      },
+      {
+        "path": "models/main/tokenizer_2/special_tokens_map.json",
+        "bytes": 460
+      },
+      {
+        "path": "models/main/tokenizer_2/merges.txt",
+        "bytes": 524619
+      },
+      {
+        "path": "models/main/unet/config.json",
+        "bytes": 1680
+      },
+      {
+        "path": "models/main/unet/diffusion_pytorch_model.fp16.safetensors",
+        "bytes": 5135149760
+      },
+      {
+        "path": "models/main/vae/config.json",
+        "bytes": 642
+      },
+      {
+        "path": "models/main/vae/diffusion_pytorch_model.fp16.safetensors",
+        "bytes": 167335342
+      }
+    ],
+    "lib64_symlink_preserved": true,
+    "disk_usage": "7551700992\t/root/autodl-active",
+    "prior_standalone_http_inference": "passed; not repeated",
+    "new_model_inference_performed": false,
+    "compute_mode": "no GPU; migration checks only",
+    "autostart": "Same launcher verified on U2Net restored image; no additional per-app reboot test",
+    "platform_image_saved": false,
+    "restored_image_verified": false,
+    "published": false
+  },
+  "platform_image_saved": true,
+  "restored_image_verified": false,
+  "published": false,
+  "image_uuid": "image-ab8145a6f9",
+  "image_name": "autodl-sdxl-20261111",
+  "image_size_gb": 7.75,
+  "review_submitted": true,
+  "review_status": "pending",
+  "review_checked_at": "2026-11-12T00:30:31.2923426+08:00",
+  "community_url": "https://www.autodl.art/i/zw2029181901/autodl-sdxl/SDXL-TextToImage"
+}
