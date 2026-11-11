@@ -9,7 +9,7 @@
 | AutoDL.Art账号 | 200211（金鳞） |
 | 介绍 | 输入文字生成图片，支持三种画幅、负面提示词与随机种子。 |
 | 服务端口 | 6006 |
-| 启动命令 | bash /root/autodl-sdxl/start.sh |
+| 本批导出镜像启动命令 | bash /root/autodl-active/run-service.sh |
 | 模型容量 | 约6.94GB；模型及输出预留12GB，依赖另计 |
 | 上游 | https://github.com/huggingface/diffusers |
 | 许可 | CreativeML Open RAIL++（权重）；Apache-2.0（Diffusers） |
